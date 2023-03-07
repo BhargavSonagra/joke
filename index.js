@@ -10,7 +10,7 @@ const cardBody = document.getElementsByClassName('card-body');
 // Define function to get a joke from the API and display it on the screen
 function getJoke() {
 
-    cardBody[0].innerHTML = '<h3>Loading..</h3>';
+    cardBody[0].innerHTML = '<h3 class="m-3 p-5">Loading..</h3>';
 
     fetch(apiUrl)
         .then(response => response.json())
